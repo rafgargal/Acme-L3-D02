@@ -20,6 +20,7 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.student1-favourite-link" action="https://ev.us.es/"/>
+			<acme:menu-suboption code="master.menu.anonymous.student3-favourite-link" action="https://www.fcbarcelona.es/"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
