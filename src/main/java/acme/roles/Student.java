@@ -2,7 +2,7 @@
 package acme.roles;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.*;
+import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
@@ -15,25 +15,22 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Student extends AbstractRole {
-	
-	protected static final long serialVersionUID = 1L;
-	
+
+	protected static final long	serialVersionUID	= 1L;
+
 	@NotBlank
 	@Length(max = 75)
-	protected String statement;
-	
+	protected String			statement;
+
 	@NotBlank
 	@Length(max = 100)
-	protected String strongFeatures;
-	
+	protected String			strongFeatures;
+
 	@NotBlank
 	@Length(max = 100)
-	protected String weakFeatures;
-	
+	protected String			weakFeatures;
+
 	@URL
-	protected String moreInfo;
-	
-	
-	
+	protected String			moreInfo;
 
 }
