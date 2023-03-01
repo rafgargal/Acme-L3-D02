@@ -4,6 +4,8 @@ package acme.entities.activity;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
@@ -12,6 +14,7 @@ import javax.validation.constraints.PastOrPresent;
 
 import org.hibernate.validator.constraints.Length;
 
+import acme.entities.worbook.Worbook;
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -40,4 +43,9 @@ public class Activity extends AbstractEntity {
 	protected Date				time;
 
 	protected String			moreInfo;
+
+	// Relationships -------------------------------------------------------------
+	@ManyToOne()
+	@JoinColumn(name = "workbook_id")
+	protected Worbook			worbook;
 }

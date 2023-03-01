@@ -4,8 +4,7 @@ package acme.entities.worbook;
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.validation.Valid;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -36,8 +35,7 @@ public class Worbook extends AbstractEntity {
 	// Relationships -------------------------------------------------------------
 
 	@NotNull
-	@Valid
-	@ManyToOne()
+	@OneToMany(mappedBy = "workbook")
 	protected List<Activity>	activities;
 
 }
