@@ -17,9 +17,6 @@ import lombok.Setter;
 @Setter
 public class Practicum extends AbstractEntity {
 
-	/**
-	 * 
-	 */
 	protected static final long	serialVersionUID	= 1L;
 
 	//Atributes
