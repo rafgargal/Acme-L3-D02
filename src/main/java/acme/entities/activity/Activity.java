@@ -1,10 +1,14 @@
 
-package acme.activity;
+package acme.entities.activity;
 
-import java.time.Duration;
+import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.PastOrPresent;
 
 import org.hibernate.validator.constraints.Length;
 
@@ -30,7 +34,10 @@ public class Activity extends AbstractEntity {
 
 	protected ActivityType		type;
 
-	protected Duration			time;
+	@Temporal(TemporalType.TIMESTAMP)
+	@PastOrPresent
+	@NotNull
+	protected Date				time;
 
 	protected String			moreInfo;
 }

@@ -1,13 +1,16 @@
 
-package acme.worbook;
+package acme.entities.worbook;
 
 import java.util.List;
 
+import javax.persistence.ManyToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-import acme.activity.Activity;
+import acme.entities.activity.Activity;
 import acme.framework.data.AbstractEntity;
 
 public class Worbook extends AbstractEntity {
@@ -24,6 +27,11 @@ public class Worbook extends AbstractEntity {
 	@Length(max = 100)
 	protected String			summary;
 
+	// Relationships -------------------------------------------------------------
+
+	@NotNull
+	@Valid
+	@ManyToOne()
 	protected List<Activity>	activities;
 
 }
