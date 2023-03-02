@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>6</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>396</x>
-      <y>12</y>
-      <w>240</w>
-      <h>72</h>
+      <x>470</x>
+      <y>0</y>
+      <w>400</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Session
@@ -15,7 +15,7 @@ Session
 -title: String {NotBlank, Length(max(76))}
 -abstract: String {NotBlank, Length(max(101))}
 -timePeriod: date
--moreInfoLink: String  
+-moreInfoLink: String  {URL} 
 bg=green
 
 
@@ -25,10 +25,10 @@ bg=green
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>396</x>
-      <y>192</y>
-      <w>240</w>
-      <h>84</h>
+      <x>470</x>
+      <y>210</y>
+      <w>400</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Practicum
@@ -37,7 +37,7 @@ Practicum
 -title: String {NotBlank, Length(max(76))}
 -abstract: String {NotBlank, Length(max(101))}
 -goals: String {NotBlank, Length(max(101))}
--estimatedTime: Float
+-estimatedTime: Double
 bg=green
 
 </panel_attributes>
@@ -46,10 +46,10 @@ bg=green
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>42</x>
-      <y>198</y>
-      <w>198</w>
-      <h>72</h>
+      <x>0</x>
+      <y>220</y>
+      <w>330</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
 Company
@@ -57,7 +57,7 @@ Company
 -name: String {Not Blank, Length(max(76))}
 -vatNumber: String {Not Blank, Length(max(26))}
 -summary: String {Not Blank , Length(max(101))}
--moreInfoLink: String  
+-moreInfoLink: String {URL} 
 bg=green
 
 </panel_attributes>
@@ -66,46 +66,46 @@ bg=green
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
-      <y>78</y>
-      <w>30</w>
-      <h>126</h>
+      <x>660</x>
+      <y>110</y>
+      <w>50</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-x
 m1=1..n
 m2=1</panel_attributes>
-    <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>234</x>
-      <y>222</y>
-      <w>174</w>
-      <h>30</h>
+      <x>320</x>
+      <y>260</y>
+      <w>170</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;-x
 m1= 0..n
 m2= 1
 </panel_attributes>
-    <additional_attributes>270.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>42</x>
-      <y>348</y>
-      <w>198</w>
-      <h>78</h>
+      <x>0</x>
+      <y>400</y>
+      <w>350</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 Company Dashboard
 --
 -totalPracticaByMonth: map (key:month, value: number of practica)
--averageSessionLength: float {hour}
--deviationSessionLength: float {hour}
--minimumSessionLength: float {hour}
--maximumSessionLength: float {hour}
+-averageSessionLength: Double
+-deviationSessionLength: Double
+-minimumSessionLength: Double
+-maximumSessionLength: Double
 bg=green
 
 </panel_attributes>
@@ -114,14 +114,14 @@ bg=green
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>132</x>
-      <y>264</y>
-      <w>30</w>
-      <h>96</h>
+      <x>150</x>
+      <y>330</y>
+      <w>50</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;-x
 m1=0..n
 m2=1</panel_attributes>
-    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
