@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.URL;
+
 import acme.framework.data.AbstractRole;
 import lombok.Getter;
 import lombok.Setter;
@@ -28,6 +30,7 @@ public class Auditor extends AbstractRole {
 	@Size(max = 101)
 	protected String			list_Certification;
 
+	@URL
 	protected String			link;
 
 }
