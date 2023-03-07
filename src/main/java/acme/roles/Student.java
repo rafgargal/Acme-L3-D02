@@ -33,4 +33,11 @@ public class Student extends AbstractRole {
 	@URL
 	protected String			moreInfo;
 
+	// Relationships ----------------------------------------------------------
+	@OneToOne
+	@Valid
+	@NotNull
+	protected DashBoard DashBoard
+
+
 }
