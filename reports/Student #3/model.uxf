@@ -55,6 +55,7 @@ Session
 + startDateTime: DateTime {NotNull, Temporal(TIMESTAMP)}
 + endDateTime: DateTime {NotNull, Temporal(TIMESTAMP)}
 + furtherInformation: String {URL}
++ / timePeriod: int {Min(3600), Max(18000), Transient}
 bg=green</panel_attributes>
     <additional_attributes/>
   </element>
@@ -146,13 +147,14 @@ bg=orange</panel_attributes>
       <x>126</x>
       <y>174</y>
       <w>150</w>
-      <h>60</h>
+      <h>66</h>
     </coordinates>
     <panel_attributes>- startDateTime must be at least
 one day ahead.
-- the period defined by startDateTime
+- timePeriod defined by startDateTime
 and endDateTime must be from one
-to five hours.
+to five hours (using seconds and
+primitive int).
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
@@ -160,11 +162,11 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>192</x>
-      <y>228</y>
+      <y>234</y>
       <w>18</w>
-      <h>60</h>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
 </diagram>
