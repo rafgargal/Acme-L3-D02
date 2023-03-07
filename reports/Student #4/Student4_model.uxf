@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>13</zoom_level>
+  <zoom_level>12</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>728</x>
-      <y>0</y>
-      <w>520</w>
-      <h>156</h>
+      <x>720</x>
+      <y>12</y>
+      <w>480</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Session
@@ -25,10 +25,10 @@ bg=green
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>728</x>
-      <y>273</y>
-      <w>663</w>
-      <h>182</h>
+      <x>720</x>
+      <y>264</y>
+      <w>612</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Practicum
@@ -46,10 +46,10 @@ bg=green
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>117</x>
-      <y>286</y>
-      <w>429</w>
-      <h>156</h>
+      <x>156</x>
+      <y>276</y>
+      <w>396</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
 Company
@@ -66,23 +66,23 @@ bg=green
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>975</x>
-      <y>143</y>
-      <w>65</w>
-      <h>156</h>
+      <x>948</x>
+      <y>144</y>
+      <w>60</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-x
-m1=1..n
-m2=1</panel_attributes>
+m1=1
+m2=1..n</panel_attributes>
     <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>533</x>
-      <y>351</y>
-      <w>221</w>
-      <h>65</h>
+      <x>540</x>
+      <y>336</y>
+      <w>204</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-x
 m1= 1
@@ -93,10 +93,10 @@ m2= 0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>104</x>
-      <y>572</y>
-      <w>455</w>
-      <h>169</h>
+      <x>144</x>
+      <y>540</y>
+      <w>420</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 Company Dashboard
@@ -114,10 +114,10 @@ bg=green
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>312</x>
-      <y>429</y>
-      <w>65</w>
-      <h>169</h>
+      <x>336</x>
+      <y>408</y>
+      <w>60</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>lt=&lt;-x
 m1=1
