@@ -16,12 +16,10 @@ import lombok.Setter;
 @Setter
 public class Company extends AbstractRole {
 
-	/**
-	 * 
-	 */
+	// Serialisation identifier
 	protected static final long	serialVersionUID	= 1L;
 
-	// Atributes
+	// Attributes
 
 	@NotBlank
 	@Length(max = 76)
@@ -37,5 +35,9 @@ public class Company extends AbstractRole {
 
 	@URL
 	protected String			moreInfoLink;
+
+	//Derived attributes
+
+	//Relationships
 
 }
