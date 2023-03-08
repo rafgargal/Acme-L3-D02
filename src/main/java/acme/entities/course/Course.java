@@ -44,6 +44,7 @@ public class Course extends AbstractEntity {
 	@Length(max = 100)
 	protected String			cAbstract;
 
+	@NotNull
 	protected ActivityType		activityType;
 
 	@PositiveOrZero
