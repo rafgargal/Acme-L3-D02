@@ -3,10 +3,8 @@ package acme.entities.worbook;
 
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
@@ -15,14 +13,11 @@ import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
 @Getter
 @Setter
 public class Worbook extends AbstractEntity {
 
 	protected static final long	serialVersionUID	= 1L;
-
-	// Attributes -------------------------------------------------------------
 
 	@NotBlank
 	@Length(max = 75)
@@ -32,10 +27,8 @@ public class Worbook extends AbstractEntity {
 	@Length(max = 100)
 	protected String			summary;
 
-	// Relationships -------------------------------------------------------------
-
-	@NotNull
-	@OneToMany(mappedBy = "workbook")
+	// Relationships ----------------------------------------------------------
+	@ManyToOne()
 	protected List<Activity>	activities;
 
 }
