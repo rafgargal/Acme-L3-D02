@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>6</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>216</y>
-      <w>312</w>
-      <h>72</h>
+      <x>459</x>
+      <y>270</y>
+      <w>468</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
 Assistant
@@ -22,17 +22,17 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>324</x>
-      <y>342</y>
-      <w>282</w>
-      <h>78</h>
+      <x>486</x>
+      <y>459</y>
+      <w>423</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Tutorial
 --
 + code: String {Unique,NotBlank, Pattern([A-Z]{1,3}[0-9][0-9]{3})}
 + title: String {NotBlank,Length(max = 75)}
-+ abstract: String {NotBlank, Length(max = 100)}
++ tAbstract: String {NotBlank, Length(max = 100)}
 + goals: String {NotBlank, Length(max = 100)}
 + estimatedTotalTime: double
 bg=green</panel_attributes>
@@ -42,15 +42,15 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>258</y>
-      <w>276</w>
-      <h>102</h>
+      <y>333</y>
+      <w>414</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Session
 --
 + title: String {NotBlank, Length(max = 75)}
-+ abstract: String {NotBlank,Length(max = 100)}
++ sAbstract: String {NotBlank,Length(max = 100)}
 + type: ActivityType
 + startDateTime: DateTime {NotNull, Temporal(TIMESTAMP)}
 + endDateTime: DateTime {NotNull, Temporal(TIMESTAMP)}
@@ -62,10 +62,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>132</x>
-      <y>354</y>
-      <w>204</w>
-      <h>60</h>
+      <x>198</x>
+      <y>477</y>
+      <w>306</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;&gt;&gt;&gt;&gt;
 m1=0..*
@@ -76,10 +76,10 @@ has &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>36</y>
-      <w>102</w>
-      <h>120</h>
+      <x>630</x>
+      <y>0</y>
+      <w>153</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Form&gt;&gt;
 AssistantDashboard
@@ -100,10 +100,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>150</y>
-      <w>42</w>
-      <h>78</h>
+      <x>684</x>
+      <y>171</y>
+      <w>63</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=1
@@ -114,10 +114,10 @@ has &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>456</x>
-      <y>282</y>
-      <w>42</w>
-      <h>72</h>
+      <x>684</x>
+      <y>369</y>
+      <w>63</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;-x
 m1=1
@@ -128,10 +128,10 @@ has &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>240</x>
-      <y>120</y>
-      <w>96</w>
-      <h>60</h>
+      <x>360</x>
+      <y>126</y>
+      <w>144</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 ActivityType
@@ -145,10 +145,10 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>60</x>
-      <y>156</y>
-      <w>150</w>
-      <h>66</h>
+      <x>90</x>
+      <y>180</y>
+      <w>225</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>- startDateTime must be at least
 one day ahead.
@@ -162,10 +162,10 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>126</x>
-      <y>216</y>
-      <w>18</w>
-      <h>54</h>
+      <x>189</x>
+      <y>270</y>
+      <w>27</w>
+      <h>81</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
