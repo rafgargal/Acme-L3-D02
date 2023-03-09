@@ -16,7 +16,6 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.data.AbstractEntity;
-import acme.roles.Company;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -55,5 +54,5 @@ public class PracticumSession extends AbstractEntity {
 	@NotNull
 	@Valid
 	@ManyToOne
-	protected Company			company;
+	protected Practicum			practicum;
 }
