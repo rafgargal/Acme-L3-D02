@@ -38,7 +38,7 @@ public class Tutorial extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			cAbstract;
+	protected String			tAbstract;
 
 	@NotBlank
 	@Length(max = 100)
