@@ -19,15 +19,15 @@ public class Auditor extends AbstractRole {
 	protected static final long	serialVersionUID	= 1L;
 
 	@NotBlank
-	@Size(max = 76)
+	@Size(max = 75)
 	protected String			firm;
 
 	@NotBlank
-	@Size(max = 26)
+	@Size(max = 25)
 	protected String			profesional_ID;
 
 	@NotBlank
-	@Size(max = 101)
+	@Size(max = 100)
 	protected String			list_Certification;
 
 	@URL
