@@ -147,13 +147,14 @@ has &gt;</panel_attributes>
       <y>84</y>
         main
       <w>96</w>
-      <h>54</h>
+      <h>60</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 ActivityType
 --
 + THEORETICAL
 + HANDS-ON
++ BALANCED
 bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
