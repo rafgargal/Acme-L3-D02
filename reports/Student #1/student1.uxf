@@ -32,7 +32,7 @@ Course
 --
 + code: String {Pattern([A-Z]{1,3}[0-9]{3}), NotBlank, Unique}
 + title: String {NotBlank, Length(max = 75)}
-+ abstract: String {NotBlank, Length(max = 100)}
++ cAbstract: String {NotBlank, Length(max = 100)}
 + activityType: ActivityType
 + retailPrice: Money 
 + furtherInfo: String {URL}
@@ -51,7 +51,7 @@ bg=green</panel_attributes>
 Lecture
 --
 + title: String {NotBlank, Length(max = 75)}
-+ abstract: String {NotBlank, Length(max = 100)}
++ lAbstract: String {NotBlank, Length(max = 100)}
 + learningTime: Time (NotNull)
 + body: String {NotBlank, Length(max = 100)}
 + activityType: ActivityType
@@ -134,13 +134,14 @@ m2=1
       <x>128</x>
       <y>64</y>
       <w>128</w>
-      <h>64</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 ActivityType
 --
 + THEORETICAL
 + HANDS-ON
++ BALANCED
 bg=YELLOW</panel_attributes>
     <additional_attributes/>
   </element>
