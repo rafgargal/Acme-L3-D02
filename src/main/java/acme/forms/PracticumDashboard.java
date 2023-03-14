@@ -11,8 +11,17 @@ public class PracticumDashboard extends AbstractForm {
 
 	//Serialisation Identifier
 
-	protected static final long serialVersionUID = 1L;
+	protected static final long	serialVersionUID	= 1L;
 
-	//Atributes
+	//Attributes
 
+	Map<String, Integer>		totalPracticaByMonth;
+
+	double						averageSessionLength;
+
+	double						deviationSessionLength;
+
+	double						minimunSessionLength;
+
+	double						maximumSessiongLength;
 }
