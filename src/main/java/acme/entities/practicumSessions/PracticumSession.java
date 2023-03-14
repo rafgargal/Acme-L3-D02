@@ -1,7 +1,7 @@
 
-package acme.entities;
+package acme.entities.practicumSessions;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -15,6 +15,7 @@ import javax.validation.constraints.PastOrPresent;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.practicum.Practicum;
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -38,11 +39,11 @@ public class PracticumSession extends AbstractEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@PastOrPresent
-	protected Date				timePeriodInitial;
+	protected Date				startDate;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@PastOrPresent
-	protected Date				timePeriodFinal;
+	protected Date				endDate;
 
 	@URL
 	protected String			moreInfoLink;
