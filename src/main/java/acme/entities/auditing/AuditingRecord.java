@@ -12,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
@@ -45,5 +46,8 @@ public class AuditingRecord extends AbstractEntity {
 
 	@Enumerated(EnumType.STRING)
 	protected Marks				mark;
+
+	@URL
+	protected String			link;
 
 }
